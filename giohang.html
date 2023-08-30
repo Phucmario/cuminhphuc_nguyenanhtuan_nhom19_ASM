@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="font-src 'self'">
+    <title>Minh Phúc và Anh Tuấn ASM - Giỏ hàng</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/giohang.css">
+    <script src="js/giohang.js"></script>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="anh/TP SHOE SPORT.png" alt="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="sanpham.html">Sản phẩm</a></li>
+                <li><a href="dangnhap.html">Đăng nhập</a></li>
+                <li><a href="dangki.html">Đăng kí</a></li>
+                <li><a href="giohang.html">Giỏ hàng</a></li>
+            </ul>
+        </nav>
+        <form action="timkiem.html" method="GET">
+            <input type="text" name="q" placeholder="Tìm kiếm...">
+            <button type="submit">Tìm</button>
+        </form>
+    </header>
+
+    <div class="giohang">
+        <h1>Giỏ hàng</h1>
+        <table id="cart-table">
+            <tr>
+                <th>Chọn</th>
+                <th>STT</th>
+                <th>Sản phẩm</th>
+                <th>Số lượng</th>
+                <th>Giá</th>
+                <th>Tổng</th>
+                <th>Xóa</th>
+            </tr>
+
+            <tr>
+                <td><input type="checkbox" onchange="updateItem()"></td>
+                <td>1</td>
+                <td>Giày Adidas Cổ Thấp Forum</td>
+                <td><input class="quantity" type="number" value="1" min="0"></td>
+                <td>1.790.000 đ</td>
+                <td class="subtotal">1.790.000 đ</td>
+                <td><button class="delete-btn" onclick="deleteItem(this)">Xóa</button></td>
+            </tr>
+
+            <tr>
+                <td><input type="checkbox" onchange="updateItem()"></td>
+                <td>2</td>
+                <td>Giày ALPHABOUNCE+ SUSTAINABLE BOUNCE</td>
+                <td><input class="quantity" type="number" value="1" min="0"></td>
+                <td>2.500.000 đ</td>
+                <td class="subtotal">2.500.000 đ</td>
+                <td><button class="delete-btn" onclick="deleteItem(this)">Xóa</button></td>
+            </tr>
+
+            <tr>
+                <td><input type="checkbox" onchange="updateItem()"></td>
+                <td>3</td>
+                <td>Giày Nike Air Max 90 G</td>
+                <td><input class="quantity" type="number" value="1" min="0"></td>
+                <td>4,070,000 ₫</td>
+                <td class="subtotal">4.070.000 ₫</td>
+
+                <td><button class="delete-btn" onclick="deleteItem(this)">Xóa</button></td>
+
+                <tr>
+                    <td><input type="checkbox" onchange="updateItem()"></td>
+                    <td>4</td>
+                    <td>Giày Nike Motiva</td>
+                    <td><input class="quantity" type="number" value="1" min="0"></td>
+                    <td>3,239,000 đ</td>
+                    <td class="subtotal">3.239.000 đ</td>
+                    <td><button class="delete-btn" onclick="deleteItem(this)">Xóa</button></td>
+                </tr>
+
+                <tr>
+                    <td><input type="checkbox" onchange="updateItem()"></td>
+                    <td>5</td>
+                    <td>Giày RUNFALCON 3</td>
+                    <td><input class="quantity" type="number" value="1" min="0"></td>
+                    <td>1.800.000 ₫</td>
+                    <td class="subtotal">1.800.000 ₫</td>
+                    <td><button class="delete-btn" onclick="deleteItem(this)">Xóa</button></td>
+                </tr>
+
+                <tr>
+                    <td><input type="checkbox" onchange="updateItem()"></td>
+                    <td>6</td>
+                    <td>Giày Nike City Rep TR</td>
+                    <td><input class="quantity" type="number" value="1" min="0"></td>
+                    <td>1,909,000 ₫</td>
+                    <td class="subtotal">1,909,000 ₫</td>
+                    <td><button class="delete-btn" onclick="deleteItem(this)">Xóa</button></td>
+                </tr>
+                <tr class="total">
+                    <td colspan="4">Tổng cộng:</td>
+                    <td id="total-amount">0 đ</td>
+                </tr>
+        </table>
+
+        <div class="checkout">
+            <button type="button" onclick="window.location.href='sanpham.html'">Tiếp tục mua hàng</button>
+            <button type="button" onclick="checkout()">Thanh toán</button>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="font-src 'self'">
+    <title>Minh Phúc và Anh Tuấn ASM </title>
+    <link rel="stylesheet" href="css/dangnhap-dangki.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <img src="anh/TP SHOE SPORT.png" alt="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="sanpham.html">Sản phẩm</a></li>
+                <li><a href="dangnhap.html">đăng nhập</a></li>
+                <li><a href="dangki.php">đăng kí</a></li>
+                <li><a href="giohang.html">giỏ hàng</a></li>
+            </ul>
+        </nav>
+        <form action="timkiem.html" method="GET">
+            <input type="text" name="q" placeholder="Tìm kiếm...">
+            <button type="submit">Tìm</button>
+        </form>
+    </header>
+
+    <div class="login">
+        <h2>Đăng nhập</h2>
+        <form>
+            <label for="username">Tên đăng nhập:</label><br>
+            <input type="text" id="username" name="username"><br>
+            <label for="password">Mật khẩu:</label><br>
+            <input type="password" id="password" name="password"><br><br>
+            <input type="submit" value="Đăng nhập">
+            <input type="dangki" value="Đăng kí" onclick="window.location.href='dangki.php'">
+
+        </form>
+    </div>
+
+</body>
+
+</html>

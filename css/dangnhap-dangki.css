@@ -1,0 +1,129 @@
+.login {
+    width: 700px;
+    margin: 100px;
+    padding: 20px;
+    border: 1px solid red;
+    border-radius: 5px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.login h2 {
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: red
+}
+
+.login label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+.login input[type="text"],
+.login input[type="password"] {
+    width: 500px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid red;
+    border-radius: 5px;
+}
+
+.login input[type="submit"] {
+    display: inline-block;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgb(249, 164, 5);
+    width: 180px;
+    text-align: center;
+    font-size: larger;
+}
+
+.login input[type="dangki"] {
+    display: inline-block;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #3E8E41;
+    text-align: center;
+    width: 180px;
+    font-size: larger
+}
+
+
+/*css dăng kí*/
+
+.logup {
+    width: 700px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid red;
+    border-radius: 5px;
+    text-align: center;
+    position: absolute;
+    top: 600px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.logup h2 {
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: red
+}
+
+.logup label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.logup input[type="text"],
+.logup input[type="email"],
+.logup input[type="tel"],
+.logup input[type="password"],
+.logup select,
+.logup textarea {
+    width: 500px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid red;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+.logup select {
+    height: 40px;
+}
+
+.logup textarea {
+    height: 100px;
+}
+
+.logup input[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.logup input[type="submit"]:hover {
+    background-color: #3E8E41;
+}
