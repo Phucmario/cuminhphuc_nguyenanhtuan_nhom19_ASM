@@ -1,0 +1,81 @@
+table {
+    width: inherit;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.total {
+    text-align: right;
+    font-weight: bold;
+}
+
+.checkout {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.subtotal,
+#total-amount {
+    font-weight: bold;
+}
+
+.checkout button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.checkout button:hover {
+    background-color: #45a049;
+}
+
+.delete-btn {
+    padding: 5px 10px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background-color: #d32f2f;
+}
+
+.quantity-btn {
+    background-color: #f2f2f2;
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+.quantity-btn:hover {
+    background-color: #e0e0e0;
+}
+
+.giohang {
+    width: 800px;
+    margin-top: 300px;
+    padding: 20px;
+    border: 1px solid red;
+    border-radius: 5px;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+input.quantity {
+    width: 50px;
+}
